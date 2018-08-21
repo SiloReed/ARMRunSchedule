@@ -1,5 +1,6 @@
 ﻿# This script can be used to pass Azure RM credential parameters to UnitTest.ps1 
 
+# Update these parameters with values appropriate for your environment
 $paramsCred = @{
     Tenant = "########-####-####-####-############"
     SubscriptionId = "########-####-####-####-############"
