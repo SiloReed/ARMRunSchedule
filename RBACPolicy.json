@@ -1,0 +1,40 @@
+{
+  "Name": "RunSchedule Operator",
+  "IsCustom": true,
+  "Description": "Can monitor, stop, and restart virtual machines, Analysis Services, and SQL servers.",
+  "Actions": [
+    "Microsoft.Storage/*/read",
+    "Microsoft.Network/*/read",
+    "Microsoft.Compute/*/read",
+    "Microsoft.Compute/virtualMachines/start/action",
+    "Microsoft.Compute/virtualMachines/restart/action",
+    "Microsoft.Compute/virtualMachines/deallocate/action",
+    "Microsoft.Compute/virtualMachines/read",
+    "Microsoft.Compute/virtualMachines/write",
+    "Microsoft.Authorization/*/read",
+    "Microsoft.Resources/*/read",
+    "Microsoft.Resources/deployments/*",
+    "Microsoft.Resources/subscriptions/resourceGroups/read",
+    "Microsoft.ResourceHealth/availabilityStatuses/read",
+    "Microsoft.Insights/alertRules/*",
+    "Microsoft.Insights/diagnosticSettings/*",
+    "Microsoft.Support/*",
+    "Microsoft.AnalysisServices/*/read",
+    "Microsoft.AnalysisServices/servers/suspend/action",
+    "Microsoft.AnalysisServices/servers/resume/action",
+    "Microsoft.Sql/locations/*/read",
+    "Microsoft.Sql/servers/*/read",
+    "Microsoft.Sql/servers/databases/pause/action",
+    "Microsoft.Sql/servers/databases/resume/action"
+  ],
+  "NotActions": [
+    "Microsoft.Sql/servers/databases/auditingPolicies/*",
+    "Microsoft.Sql/servers/databases/connectionPolicies/*",
+    "Microsoft.Sql/servers/databases/dataMaskingPolicies/*",
+    "Microsoft.Sql/servers/databases/securityAlertPolicies/*",
+    "Microsoft.Sql/servers/databases/securityMetrics/*"
+  ],
+  "AssignableScopes": [
+    "/subscriptions/66529817-27b2-428c-b719-b5d953714024"
+  ]
+}

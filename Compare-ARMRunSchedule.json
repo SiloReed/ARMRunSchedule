@@ -1,0 +1,48 @@
+{
+    "Variables":  [
+        {
+            "name": "TenantId",
+            "value": "########-####-####-####-############"           
+        },
+        {
+            "name": "SubscriptionId",
+            "value": "########-####-####-####-############"
+        },
+        {
+            "name": "ApplicationId",
+            "value": "########-####-####-####-############"
+        },
+        {
+            "name": "CertificateThumbprint",
+            "value": "########################################"
+        },
+        {
+            "name": "TableRGName",
+            "value": "rg-armrunschedule-jjrvspro-dt"
+        },
+        {
+            "name": "FilterPath",
+            "value": "C:\\ARMRunSchedule\\RunScheduleFilter.json"
+        },
+        {
+            "name": "TableSAName",
+            "value": "saarmrunschedulejjrdt"
+        },
+        {
+            "name": "TableName",
+            "value": "ARMRunScheduleLog"
+        },
+        {
+            "name": "SMTPServer",
+            "value": "mydomain-com.mail.protection.outlook.com"
+        },
+        {
+            "name": "Domain",
+            "value": "mydomain.com"
+        },        
+        {
+            "name": "To",
+            "value": "siloreed@hotmail.com"
+        }
+    ]
+}

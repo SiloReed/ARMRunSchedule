@@ -1,0 +1,50 @@
+{
+    "name": "ITEA RunSchedule Filter",
+    "comment": "This is the list of virtual machines, Analysis Services Servers, and SQL databases that could be checked by the Compare-ARMVMRunSchedule script.",
+    "resourceGroups": [
+        {
+            "name": "rg-AZEU1FILE01",
+            "resources": [
+                {
+                    "name": "AZEU1FILE01",
+                    "resourceType": "Microsoft.Compute/virtualMachines",
+                    "RunSchedule": {
+                        "Enabled":  true,
+                        "AutoStart": false,
+                        "RunDays": [
+                            1,
+                            2,
+                            3,
+                            4,
+                            5
+                        ],
+                        "RunHours": 9,
+                        "StartHourUTC": 14
+                    }
+                }
+            ]
+        },
+        {
+            "name": "rg-AZEU1ADDC01",
+            "resources": [
+                {
+                    "name": "AZEU1ADDC01",
+                    "resourceType": "Microsoft.Compute/virtualMachines",
+                    "RunSchedule": {
+                        "Enabled":  true,
+                        "AutoStart": false,
+                        "RunDays": [
+                            1,
+                            2,
+                            3,
+                            4,
+                            5
+                        ],
+                        "RunHours": 9,
+                        "StartHourUTC": 14
+                    }
+                }
+            ]
+        }
+    ]
+}
