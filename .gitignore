@@ -1,6 +1,8 @@
-# Ignore Compare-ARMRunSchedule.json - use Compare-ARMRunSchedule.json.txt as a template to create the Compare-ARMRunSchedule.json specific to your environment
-Compare-ARMRunSchedule.json
-# Ignore RunScheduleFilter.json - use RunScheduleFilter.json.txt as a template to create the RunScheduleFilter.json specific to your environment.
-RunScheduleFilter.json
-# Ignore the /Logs subdirectory - this allows the local repo to be used "live' without the /Logs files polluting the orgin git repo
-/Logs/*
+# Ignore configuration .json files such as Compare-ARMRunSchedule.json so the local repo may be used "live"
+*.json
+# EXCEPT don't ignore this .json files as it is used to create an RBAC policy and should be tracked by git
+!RBACPolicy.json
+# Ignore the Logs folder so the local repo may be used "live"
+Logs/
+# Ignore the .vscode folder in-case there are Visual Studio Code preferences (such as debugging) that are unique to each user
+.vscode/
