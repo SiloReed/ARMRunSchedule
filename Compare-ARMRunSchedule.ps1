@@ -341,7 +341,7 @@ function Read-Variables {
     #>
 
     # Define the variables required by the script that must be set in the JSON document
-    $RequiredVars = @("TenantId", "SubscriptionId", "CertificateThumbprint", "TableRGName", "TableSAName", "TableName", "FilterPath", "SMTPServer", "To")
+    $RequiredVars = @("TenantId", "SubscriptionId", "CertificateThumbprint", "TableRGName", "TableSAName", "TableName", "FilterPath", "SMTPServer", "Domain", "To")
 
     # Loop through vars and remove them if they were previously set.
     foreach ($v in $RequiredVars) {
