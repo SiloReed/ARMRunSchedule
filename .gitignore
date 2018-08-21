@@ -1,0 +1,6 @@
+# Ignore Compare-ARMRunSchedule.json - use Compare-ARMRunSchedule.json.txt as a template to create the Compare-ARMRunSchedule.json specific to your environment
+Compare-ARMRunSchedule.json
+# Ignore RunScheduleFilter.json - use RunScheduleFilter.json.txt as a template to create the RunScheduleFilter.json specific to your environment.
+RunScheduleFilter.json
+# Ignore the /Logs subdirectory - this allows the local repo to be used "live' without the /Logs files polluting the orgin git repo
+/Logs/*
